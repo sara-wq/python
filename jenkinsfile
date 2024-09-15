@@ -1,0 +1,17 @@
+pipelien{
+  agent any
+  stages{
+    stage("veriobn"){
+      steps{
+        sh "python3 --version"
+      }
+    }
+    stage("script"){
+      steps{
+        sh "python3 hello.py"
+      }
+    }
+  }
+}
+
+        
